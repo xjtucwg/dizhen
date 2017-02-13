@@ -5,7 +5,7 @@ mode : selfcontained
 framework: revealjs
 hitheme : tommrow
 knit: slidify::knit2slides
-url :  {lib: ../libraries}
+url :  {lib: /libraries}
 revealjs:
   theme: sky
   transition: cube
@@ -50,16 +50,16 @@ font-size: 3
 }
 
 .title-slide hgroup > h1{
-  font-family: 'Oswald', '微软雅黑';
+  font-family: 'Oswald', '黑体';
   color: #202020;
 }
 
 .title-slide hgroup > h2{
-  font-family: 'Signika Negative', 'Calibri', '微软雅黑';
+  font-family: 'Signika Negative', 'Calibri', '黑体';
   color: #202020;
 }
 
-.reveal {font-family: 'Signika Negative', 'Calibri', '微软雅黑';
+.reveal {font-family: 'Signika Negative', 'Calibri', '黑体';
   color: #202020;
 }
 
@@ -82,21 +82,21 @@ Created by doicu <br/>
 ---&vertical
 ## 查询内容
 
-- 您在***2050月13日25时61分***提交的地震目录查询要求（时间范围:***2050-2100***，空间范围:***ABC-DEF-123***，震级范围:***1-100***），共查询到***-1000***条地震事件，报告已生成并上传至服务器。（蓝色粗体部分为人造数据以保密）
+> - .highlight-red 您在***2050月13日25时61分***提交的地震目录查询要求（时间范围:***2050-2100***，空间范围:***ABC-DEF-123***，震级范围:***1-100***），共查询到***-1000***条地震事件，报告已生成并上传至服务器。（蓝色粗体部分为人造数据以保密）
 
 
----&vertical
+---&vertical ds:soothe
 ## 事件统计
 
-***  
+***ds:soothe
 地震事件的统计信息如下表
 
-<iframe data-src="./pic/1.html" height="280px" width="500px"></iframe>
+<iframe src="./pic/1.html" height="280px" width="500px"></iframe>
 
-***
+***ds:soothe
 seismicity of all catalog
 
-<iframe data-src="./pic/下载.png" height="500px" width="400px"></iframe>
+<iframe src="./pic/下载.png" height="500px" width="400px"></iframe>
 
 ```{r, eval=FALSE, include=FALSE}
 library(formattable)
@@ -119,38 +119,38 @@ formattable(x,list("震级"=color_tile("green","red"),area(col="数量")~normali
 *** 
 ### 地震-地理空间分布图
 
-<iframe data-src="./pic/下载11.png" height="550" width="850"></iframe>
+<iframe src="./pic/下载11.png" height="550" width="850"></iframe>
 
 *** 
 ### 地震-构造空间分布图
 
-<iframe data-src="./pic/下载22.png" height="550" width="820"></iframe>
+<iframe src="./pic/下载22.png" height="550" width="820"></iframe>
 
 
----&vertical 
-## 时间分析
+---&vertical ds:soothe
+## 时间分析 
 
-*** 
+***ds:soothe
 ### 地震事件M-T关系图
 
-<iframe data-src="./pic/下载2.png" height="400px" width="800px"></iframe>
+<iframe src="./pic/下载2.png" height="400px" width="800px"></iframe>
 
-*** 
+***ds:soothe
 ### 地震事件G-R关系图
 
-<iframe data-src="./pic/下载3.png" height="400px" width="800px"></iframe>
+<iframe src="./pic/下载3.png" height="400px" width="800px"></iframe>
 
-***
+***ds:soothe
 ### 地震事件累计数量时间关系图
 
-<iframe data-src="./pic/下载4.png" height="400px" width="500px"></iframe>
+<iframe src="./pic/下载4.png" height="400px" width="500px"></iframe>
 
 ---&vertical
 ## 事件列表
 
 查询到主要地震事件详细列表如下：
 
-<iframe data-src="./pic/2.html" height="400px" width="800px"></iframe>
+<iframe src="./pic/2.html" height="400px" width="800px"></iframe>
 
 ```{r, eval=FALSE, include=FALSE}
 years<-c(1:8)
@@ -173,12 +173,12 @@ formattable(x1,list(area(col="depth")~normalize_bar("#aaff32",0.2),"mc"=color_ti
 
 
 
----&vertical
+---&vertical ds:soothe
 #### 此报告由AI自动完成
 
 扫描二维码,分享此报告
 
-<iframe data-src="./pic/下载5.png" height="400px" width="380px"></iframe>
+<iframe src="./pic/下载5.png" height="400px" width="380px"></iframe>
 
 <script>
 $('ul.incremental li').addClass('fragment')
